@@ -99,7 +99,7 @@ main {
     font-size: 1.5rem;
 }
 .dot a{
-    border-radius:2.5rem;
+    border-radius:0.25rem;
     width: 0.5rem;
     height: 0.5rem;
     cursor:pointer;
