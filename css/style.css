@@ -1,0 +1,128 @@
+@media screen and (min-width: 640px){
+    html,body {
+        font-size: 62.5%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 640px) {
+    html,body {
+        font-size: 50%;
+        height: 100%;
+    }
+}
+/*清除bootstrap设置的p的margin值*/
+p {
+    margin: 0;
+}
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+/*header样式*/
+header {
+    position: fixed;
+    top:0;
+    height: 5rem;
+    background-color: #29BDE0;
+    width: 100vw;
+}
+.dropdown button {
+    margin: 2rem 0 0 1rem;
+    background-color: #29BDE0;
+    border: none;
+    color: white;
+    font-size: 2rem;
+}
+/*main样式*/
+main {
+    padding-top: 5rem;
+    text-align: center;
+    background: #F0F0F0;
+    padding-bottom: 3rem;
+}
+/*lastGame样式*/
+.lastGame {
+    height: 5.75rem;
+    background-color: white;
+    width: 88%;
+    margin: 1.25rem auto;
+    font-size: 2.24rem;
+    border: 1px solid #C9C9C9;
+}
+.lastGame a {
+    color: #9A9A9A;!important;
+}
+.lastGame span {
+    position: absolute;!important;
+    top: .2rem;
+    font-size: 2.5rem;
+    right: 3%;    
+}
+.lastGame p {
+    position: relative;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 50%;
+}
+/*game样式*/
+.game {
+    background-color: white;
+    width: 88%;
+    margin: 0 auto;
+    border: 1px solid #C9C9C9;
+}
+.gameName {
+    font-size: 2.24rem;
+    color: #FBB435;
+    border-bottom: 1px solid #FBB435;
+    height: 4.5rem;
+}
+.gameName p {
+    line-height: 4.5rem;
+}
+.gameVersion button {
+    background-color: #69D1E9;
+    border: none;
+    width: 82%;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    font-size: 2rem;
+    color: white;
+    padding: 2.5rem 0.6rem;
+    margin: 1.5rem 0;
+}
+.gameVersion p {
+    font-size: 1.5rem;
+}
+.dot a{
+    border-radius:2.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    cursor:pointer;
+    background-color: #F0F0F0;
+    display: inline-block;
+    margin: 0 .15rem;
+}
+.dot .active {
+    background-color: #69D1E9;
+}
+.triangle-right {
+    width:0;
+    height:0;
+    display: inline-block;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 15px solid #FBB435;
+    position: absolute;
+    right: 1rem;
+    top: 3.3rem;
+    cursor: pointer;
+
+}
+.gameVersion {
+    position: relative;
+}
