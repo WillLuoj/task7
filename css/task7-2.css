@@ -1,0 +1,99 @@
+@media  screen and (min-width: 768px) {
+    body {
+        font-size: 62.5%;
+        background-color: #29BDE0;
+    }
+}
+@media  screen and (max-width: 768px) {
+    body {
+        font-size: 50%;
+        background-color: #29BDE0;
+    }
+}
+p {
+    margin: 0;
+}
+.position-mid {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+/*header样式*/
+header {
+    position: relative;
+    height: 8rem;
+    text-align: center;
+    color: white;
+    vertical-align: bottom;
+    font-size: 3.4rem;
+}
+header .glyphicon {
+    top: .5rem;
+}
+header .row {
+    position: relative;
+    top:100%;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+/*main样式*/
+
+/*prompt样式*/
+.indicator {
+    height: 9rem;
+    background-color: #B9E9F5;
+    font-size: 2.6rem;
+    text-indent: 4.5rem;
+}
+.indicator audio {
+    float: right;
+}
+.tip {
+    position: relative;
+}
+.traingle {
+    width: 0;
+    height: 0;
+    border-left: .5rem solid transparent;
+    border-right: .5rem solid transparent;
+    border-top: 1rem solid #B9E9F5;
+    position: absolute;
+    left: 7rem;
+}
+.tip p{
+    font-size: 2.4rem;
+    color: white;
+    padding: 2.5rem 0;
+    text-indent: 7rem;
+}
+.col-xs-4 .player-name{
+    font-size: 3rem;
+    line-height: 5rem;
+    background-color: #F5C97B;
+    text-align: center;
+    padding: 2.5rem 0;
+    width: 12.5rem;
+    margin: 0 auto;
+}
+.col-xs-4 .player-num {
+    font-size: 2.28rem;
+    line-height: 2.5rem;
+    background-color: #83B09A;
+    color: white;
+    width: 12.5rem;
+    margin: 0 auto;
+    text-align: center;
+}
