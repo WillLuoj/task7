@@ -6,8 +6,11 @@
 }
 @media  screen and (max-width: 768px) {
     body {
-        font-size: 50%;
+        font-size: 5px;
         background-color: #29BDE0;
+    }
+    .indicator img{
+        width: 26px;
     }
 }
 p {
@@ -24,15 +27,15 @@ p {
 }
 /*header样式*/
 header {
-    position: relative;
-    height: 8rem;
+    /*position: relative;*/
+    height: 6.67rem;
     text-align: center;
     color: white;
     vertical-align: bottom;
-    font-size: 3.4rem;
+    font-size: 2.83rem;
 }
 header .glyphicon {
-    top: .5rem;
+    top: .4rem;
 }
 header .row {
     position: relative;
@@ -53,13 +56,21 @@ header .row {
 
 /*prompt样式*/
 .indicator {
-    height: 9rem;
+    position: relative;
+    height: 7.5rem;
     background-color: #B9E9F5;
-    font-size: 2.6rem;
-    text-indent: 4.5rem;
+    font-size: 2.17rem;
+    text-indent: 1.5rem;
 }
-.indicator audio {
-    float: right;
+.indicator img {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 .tip {
     position: relative;
@@ -69,31 +80,116 @@ header .row {
     height: 0;
     border-left: .5rem solid transparent;
     border-right: .5rem solid transparent;
-    border-top: 1rem solid #B9E9F5;
+    border-top: 0.83rem solid #B9E9F5;
     position: absolute;
-    left: 7rem;
+    left: 5.83rem;
 }
 .tip p{
-    font-size: 2.4rem;
+    font-size: 2rem;
     color: white;
-    padding: 2.5rem 0;
-    text-indent: 7rem;
+    padding: 2rem 0;
+    text-indent: 2.83rem;
+}
+/*玩家样式*/
+main .row {
+    padding-bottom: 3.75rem;
+}
+.col-xs-4 p {
+    border-left: .4rem solid white;
+    border-right: .4rem solid white;
 }
 .col-xs-4 .player-name{
-    font-size: 3rem;
-    line-height: 5rem;
+    font-size: 1.67rem;
     background-color: #F5C97B;
+    border-top: .4rem solid white;
     text-align: center;
-    padding: 2.5rem 0;
-    width: 12.5rem;
+    width: 19.5vw;
+    line-height: 15.5vw;
     margin: 0 auto;
 }
 .col-xs-4 .player-num {
-    font-size: 2.28rem;
-    line-height: 2.5rem;
+    font-size: 1rem;
+    line-height: 4vw;
     background-color: #83B09A;
+    border-bottom: .4rem solid white;
     color: white;
-    width: 12.5rem;
+    width: 19.5vw;
     margin: 0 auto;
     text-align: center;
+}
+.col-xs-4 .choose {
+    visibility: hidden;
+}
+.col-xs-4:hover  .choose {
+    visibility: visible;
+    display: flex;
+    position: relative;
+    top: 1.67rem;
+    justify-content: space-between;
+    width: 19.5vw;
+    margin: 0 auto;
+}
+
+@media  screen and (min-width:768px ) {
+    .choose span {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+    }
+    .choose .kill {
+        background: url(../image/choose.png) -60px 0 no-repeat ;
+
+    }
+    .choose .search {
+        background: url(../image/choose.png) -90px 0 no-repeat ;
+    }
+    .choose .pitch {
+        background: url(../image/choose.png) 0 0 no-repeat ;
+    }
+    .choose .treat {
+        background: url(../image/choose.png) -30px 0 no-repeat ;
+    }
+
+}
+@media  screen and (max-width:768px ) {
+    .choose span {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+    }
+    .choose .kill {
+        background: url(../image/choose.png) -30px 0 no-repeat ;
+        -webkit-background-size: 60px 15px;
+        background-size: 60px 15px;
+    }
+    .choose .search {
+        background: url(../image/choose.png) -45px 0 no-repeat ;
+        -webkit-background-size: 60px 15px;
+        background-size: 60px 15px;
+    }
+    .choose .pitch {
+        background: url(../image/choose.png) 0 0 no-repeat ;
+        -webkit-background-size: 60px 15px;
+        background-size: 60px 15px;
+    }
+    .choose .treat {
+        background: url(../image/choose.png) -15px 0 no-repeat ;
+        -webkit-background-size: 60px 15px;
+        background-size: 60px 15px;
+    }
+
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 7.5rem;
+    width: 100vw;
+    background-color: #29BDE0;
+}
+.btn-block {
+    font-size: 2rem;
+    color: white;
+    width: 76vw;
+    margin:0 auto;
+    background-color: #FBB435;
 }

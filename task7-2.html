@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/task7-2.css">
@@ -20,9 +21,10 @@
         <div class="prompt">
             <div class="indicator">
                 <p class="position-mid">发言讨论结束，请大家投票</p>
-                <audio src="" controls="controls">
+                <audio src="audio/audio.mp3" id="aud">
                     你的浏览器不支持改格式音乐
                 </audio>
+                <img src="image/play.png" id="playpause" />
 
             </div>
             <div class="tip">
@@ -42,7 +44,7 @@
                     </div>
                 </div>
                 <div class="col-xs-4">
-                    <p>水手</p><p>2号</p>
+                    <p class="player-name">水手</p><p class="player-num">1号</p>
                     <div class="choose">
                         <span class="kill"></span>
                         <span class="search"></span>
@@ -51,7 +53,123 @@
                     </div>
                 </div>
                 <div class="col-xs-4">
-                    <p>水手</p><p>3号</p>
+                    <p class="player-name">水手</p><p class="player-num">1号</p>
+                    <div class="choose">
+                        <span class="kill"></span>
+                        <span class="search"></span>
+                        <span class="pitch"></span>
+                        <span class="treat"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <p class="player-name">水手</p><p class="player-num">1号</p>
+                    <div class="choose">
+                        <span class="kill"></span>
+                        <span class="search"></span>
+                        <span class="pitch"></span>
+                        <span class="treat"></span>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <p class="player-name">水手</p><p class="player-num">1号</p>
+                    <div class="choose">
+                        <span class="kill"></span>
+                        <span class="search"></span>
+                        <span class="pitch"></span>
+                        <span class="treat"></span>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <p class="player-name">水手</p><p class="player-num">1号</p>
+                    <div class="choose">
+                        <span class="kill"></span>
+                        <span class="search"></span>
+                        <span class="pitch"></span>
+                        <span class="treat"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <p class="player-name">水手</p><p class="player-num">1号</p>
+                    <div class="choose">
+                        <span class="kill"></span>
+                        <span class="search"></span>
+                        <span class="pitch"></span>
+                        <span class="treat"></span>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <p class="player-name">水手</p><p class="player-num">1号</p>
+                    <div class="choose">
+                        <span class="kill"></span>
+                        <span class="search"></span>
+                        <span class="pitch"></span>
+                        <span class="treat"></span>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <p class="player-name">水手</p><p class="player-num">1号</p>
+                    <div class="choose">
+                        <span class="kill"></span>
+                        <span class="search"></span>
+                        <span class="pitch"></span>
+                        <span class="treat"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <p class="player-name">水手</p><p class="player-num">1号</p>
+                    <div class="choose">
+                        <span class="kill"></span>
+                        <span class="search"></span>
+                        <span class="pitch"></span>
+                        <span class="treat"></span>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <p class="player-name">水手</p><p class="player-num">1号</p>
+                    <div class="choose">
+                        <span class="kill"></span>
+                        <span class="search"></span>
+                        <span class="pitch"></span>
+                        <span class="treat"></span>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <p class="player-name">水手</p><p class="player-num">1号</p>
+                    <div class="choose">
+                        <span class="kill"></span>
+                        <span class="search"></span>
+                        <span class="pitch"></span>
+                        <span class="treat"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <p class="player-name">水手</p><p class="player-num">1号</p>
+                    <div class="choose">
+                        <span class="kill"></span>
+                        <span class="search"></span>
+                        <span class="pitch"></span>
+                        <span class="treat"></span>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <p class="player-name">水手</p><p class="player-num">1号</p>
+                    <div class="choose">
+                        <span class="kill"></span>
+                        <span class="search"></span>
+                        <span class="pitch"></span>
+                        <span class="treat"></span>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <p class="player-name">水手</p><p class="player-num">1号</p>
                     <div class="choose">
                         <span class="kill"></span>
                         <span class="search"></span>
@@ -63,7 +181,9 @@
         </div>
     </main>
     <footer>
-        <button type="button" class="btn">投死</button>
+        <button type="button" class="btn btn-block position-mid">投死</button>
     </footer>
+    <script type="text/javascript" src="js/audio.js"></script>
+
 </body>
 </html>
